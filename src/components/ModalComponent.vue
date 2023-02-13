@@ -51,7 +51,7 @@ import { getCompletedTasks, getPendingTasks } from '../utilities/utils'
 export default {
   data() {
     return {
-      list: this.todoList.filter((item) => !item.completed), isPending: true, NO_DATA, FILTERS, BUTTON, pending, completed
+      list: this.todoList ? getPendingTasks(this.todoList) : [], isPending: true, NO_DATA, FILTERS, BUTTON, pending, completed
     }
   },
   props: {
@@ -77,7 +77,6 @@ export default {
         this.isPending = false
         this.list = getCompletedTasks(this.todoList)
       }
-      console.log(this.list)
     }
   }
 }

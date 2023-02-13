@@ -7,7 +7,7 @@
       <button v-bind:disabled='todoText === ""' @click="addTodoItem"
         class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white px-4 border border-blue-500 hover:border-transparent rounded mr-5"
         :class="{ [`pointer-events-none text-gray-700 border-gray-500`]: todoText == '' }">{{ BUTTON.ADD }}</button>
-        <!-- <task-filters v-if="allTodos.length > 0" /> -->
+        <task-filters />
     </div>
   </div>
 </template>
@@ -16,10 +16,10 @@
 import { mapActions } from 'vuex';
 import { getAddObject } from '../utilities/utils'
 import { BUTTON, MY_TODO } from '@/utilities/constants';
-// import TaskFilters from './TaskFilters.vue';
+import TaskFilters from './TaskFilters.vue';
 
 export default {
-  components: { },
+  components: { TaskFilters },
   data() {
     return {
       todoText: "", BUTTON, MY_TODO,

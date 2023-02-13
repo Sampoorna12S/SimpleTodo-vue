@@ -1,4 +1,4 @@
-import { createLocalVue, mount } from '@vue/test-utils';
+import { createLocalVue, shallowMount } from '@vue/test-utils';
 import Vuex from 'vuex';
 import CreateTodo from '@/components/CreateTodo.vue';
 
@@ -17,7 +17,7 @@ describe('CreateTodo.vue', () => {
       allTodos: jest.fn(),
     };
     state = {
-      allTodos: [],
+      allTodos: [{ id: 1, title: 'Test Case', completed: false }],
     };
     store = new Vuex.Store({
       actions,
@@ -26,7 +26,7 @@ describe('CreateTodo.vue', () => {
     });
   });
   it('renders createTodo', () => {
-    const wrapper = mount(CreateTodo);
+    const wrapper = shallowMount(CreateTodo, { store, localVue });
     expect(wrapper.isVisible()).toBe(true);
   });
 });
