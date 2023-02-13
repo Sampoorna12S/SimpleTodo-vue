@@ -1,7 +1,7 @@
 <template>
   <div class="flex float-right">
     <button v-if="allTodos.length > 0" @click='openModal'
-      class="border-2 border-blue-700 p-2 rounded"><img class='w-10' src="../assets/categorize.svg" /></button>
+      class="border-2 border-blue-700 p-2 rounded"><img class='w-12 sm:w-7' src="../assets/categorize.svg" /></button>
     <div v-if="showModal">
       <ModalComponent @clickEvent="openModal($val)" :todoList="allTodos" :title="PENDING_TITLE" :pendingModal="true" />
     </div>

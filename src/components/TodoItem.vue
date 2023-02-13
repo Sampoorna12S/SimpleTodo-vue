@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-nowrap px-20 w-100 my-5">
+  <div class="sm:flex block flex-nowrap px-10 w-100 my-5">
     <div class="mr-10">
       <input :checked="completed" @change="onCompletedTask(todo)" type="checkbox" />
     </div>
