@@ -1,16 +1,16 @@
 # Welcome to todo-app - Vue js
 
-## This will run the test cases for the components.
+** This will install the node modules which helps to run the app. **
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+** Compiles and hot-reloads for development **
 ```
 npm run serve
 ```
 
-### Run test case
+** Run test case **
 ```
 npm run test:unit
 ```
