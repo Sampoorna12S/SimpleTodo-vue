@@ -3,11 +3,14 @@
 **To run the application**
 
 
-1.```npm install``` - This will install the node modules which helps to run the app.
+1. This will install the node modules which helps to run the app.
+```npm install```
 
-2.```npm run test:unit``` - Run test cases
+2. Run test cases
+```npm run test:unit``` 
 
-3.```npm run serve``` - Compiles and hot-reloads for development
+3. Compiles and hot-reloads for development.
+```npm run serve```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
