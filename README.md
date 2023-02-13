@@ -1,6 +1,6 @@
-# todo-app
+# Welcome to todo-app - Vue js
 
-## Project setup
+## This will run the test cases for the components.
 ```
 npm install
 ```
