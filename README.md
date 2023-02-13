@@ -1,24 +1,16 @@
-# todo-app
+# Welcome to todo-app - Vue js
 
-## Project setup
-```
-npm install
-```
+**To run the application**
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+1. This will install the node modules which helps to run the app.
+```npm install```
 
-### Lints and fixes files
-```
-npm run lint
-```
+2. Run test cases
+```npm run test:unit``` 
+
+3. Compiles and hot-reloads for development.
+```npm run serve```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
